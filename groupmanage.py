@@ -1,7 +1,12 @@
+##WORK IN PROGRESS
 import random
 import csv
 
 class GroupManage:
+    """Adds and drops users in CSV file
+    Attributes:
+    None
+    """
     def __init__(self):
         self.filename = "user.csv"
         with open (self.filename, 'w') as self.writecsv:
@@ -15,6 +20,13 @@ class GroupManage:
         self.li = []
 
     def add_user(self):
+        """Adds user to CSV file
+        Args:
+        None
+        
+        Returns:
+        None
+        """
         for row in self.readcsv.readlines():
             self.li.append(row)
         firstname = input("first name: ")
@@ -43,6 +55,13 @@ class GroupManage:
         self.appcsv.close()
 
     def drop_user(self):
+        """Drops user from CSV file
+        Args:
+        Nones
+        
+        Returns:
+        None
+        """
         #lines = []
         #self.read = csv.reader(self.readcsv)
         for row in self.readcsv.readlines():
