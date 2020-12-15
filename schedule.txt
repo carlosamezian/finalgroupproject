@@ -1,0 +1,5 @@
+1 Miguel Mayo 11/20/2020 08:00 pm
+2 Gennady Ensley 10/19/1999 12:30 am
+3 Catalina Wine Mixer 11/20/2020 08:00 pm
+4 James Murphy 10/19/1999 12:30 am
+5 Anna Cymerman 11/20/2020 08:00 pm666666666<bound method Entry.get of <tkinter.Entry object .!entry>><bound method Entry.get of <tkinter.Entry object .!entry>>6<bound method Entry.get of <tkinter.Entry object .!entry>><bound method Entry.get of <tkinter.Entry object .!entry3>>6<bound method Entry.get of <tkinter.Entry object .!entry>>6<bound method Entry.get of <tkinter.Entry object .!entry>><bound method Entry.get of <tkinter.Entry object .!entry2>><bound method Entry.get of <tkinter.Entry object .!entry3>>
