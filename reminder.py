@@ -40,10 +40,14 @@ def main():
     """
     
     root=tk.Tk()
+    label1=tk.Label(root,text="What would you like to be reiminded about?")
+    label1.grid(row=0,column=0)
     entry1=tk.Entry(root, text="What would you like to be reiminded about? ", width=35)
-    entry1.grid(row=0, column=0)
+    entry1.grid(row=0, column=1)
+    label2=tk.Label(root,text="In how long?(minutes)")
+    label2.grid(row=1,column=0)
     entry2=tk.Entry(root, text="In how long?(minutes)", width=35)
-    entry2.grid(row=1, column=0)
+    entry2.grid(row=1, column=1)
     button1=tk.Button(root, text= "Create", command=lambda: create(entry1.get(),entry2.get()))
     button1.grid(row=3, column=0)
 
