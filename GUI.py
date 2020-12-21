@@ -3,6 +3,7 @@ import appointment
 import reminder
 import tkinter as tk
 
+# Module is incomplete
 
 
 root=tk.Tk()
