@@ -6,7 +6,7 @@
 This program is a student management system which an admin uses. It uses a CSV file
 to manage all the info of the students that are on the roster.
 
-##Included:
+## Included:
   * Gui module to display intereact with.
   * Main module that manages the csv file that adds and drops users.
   * It automatically creates a file.
