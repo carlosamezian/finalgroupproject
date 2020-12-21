@@ -30,16 +30,26 @@ class GroupManage:
                 self.writer.writeheader() # Writes header names in CSV file if they aren't already there
         
     def add_user(self, name, email):
-        """Sets up user info for GUI
+        """Adds a user to CSV file
         
         Args:
         filename (string): The name of the file
+        readcsv: Reads the CSV file
         lis (list): List of user information
         app: Appends user information to CSV file
         appcsv: Variable for appending to CSV file
         
         Returns: None
         """
+        
+        userlist = [] # List of user information in each row
+        with open (self.filename, 'r') as self.readcsv: # Converts CSV rows to a list to check if the inputted email address is in the list
+            reader = csv.reader(self.readcsv)
+            for row in reader:
+                userlist.append(row)
+                for field in row:
+                    while email in row:
+                        email = input("Email address already taken! Enter another email address: ")
         
         password = random.randint(1000000000,9999999999) # Random 10 digit password for user
             
@@ -54,12 +64,11 @@ class GroupManage:
         label1.pack()
 
     def drop_user(self, user):
-        """Sets up user drop for GUI
+        """Drops a user from CSV file
         Args:
         filename (string): The name of the file
         readcsv: Variable for reading CSV file
         writecsv: Variable for writing to CSV file
-
         Returns: None
         """
         userlist = [] # List of user information in each row
@@ -77,7 +86,7 @@ class GroupManage:
         label1=tk.Label(root, text="Success you may close previous window or type another user")
         label1.pack()
         
-if __name__ == '__main__':
+def menu():
     myGroup=GroupManage()
 
     root=tk.Tk()
@@ -100,3 +109,6 @@ if __name__ == '__main__':
     Drop_User_Button.grid(row=3,column=1)
 
     root.mainloop()
+    
+if __name__ == "__main__":
+    menu()
