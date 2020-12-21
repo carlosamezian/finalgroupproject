@@ -2,7 +2,7 @@
 
 ## Student Management System
 
-This program is a student management system which an admin uses. It uses a CSV file
+###This program is a student management system which an admin uses. It uses a CSV file
 to manage all the info of the students that are on the roster.
 
 Included:
@@ -31,6 +31,6 @@ cryptography.fernet import Fernet
 * Item 2
   * Item 2a
   * Item 2b
-######test
+
   
 
