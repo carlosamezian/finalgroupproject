@@ -14,6 +14,16 @@ Included:
 	Reminder module that admin uses to time how long until a meeting starts.
 		Side Affects:
 Instructions:
+Please have the following modules installed:
+tkinter
+functools
+random
+csv
+os.path
+re
+cryptography.fernet import Fernet
+
+
 
 
 
