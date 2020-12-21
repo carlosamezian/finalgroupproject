@@ -77,26 +77,26 @@ class GroupManage:
         label1=tk.Label(root, text="Success you may close previous window or type another user")
         label1.pack()
         
+if __name__ == '__main__':
+    myGroup=GroupManage()
 
-myGroup=GroupManage()
+    root=tk.Tk()
 
-root=tk.Tk()
+    label1=tk.Label(root, text= "Enter User Info Below (Case Sensitive): ")
+    label1.grid(row=0,column=0)
 
-label1=tk.Label(root, text= "Enter User Info Below (Case Sensitive): ")
-label1.grid(row=0,column=0)
+    entry1=tk.Entry(root, width=35) 
+    entry1.grid(row=1, column=1)
+    entry1.insert("end", 'Student Name Here')
 
-entry1=tk.Entry(root, width=35) 
-entry1.grid(row=1, column=1)
-entry1.insert("end", 'Student Name Here')
+    entry2=tk.Entry(root, width=35) 
+    entry2.grid(row=2, column=1)
+    entry2.insert("end", 'Student Email Here')
 
-entry2=tk.Entry(root, width=35) 
-entry2.grid(row=2, column=1)
-entry2.insert("end", 'Student Email Here')
+    Add_User_Button=tk.Button(root, text="Add User", command= lambda: myGroup.add_user(entry1.get(),entry2.get()))
+    Add_User_Button.grid(row=3,column=0)
 
-Add_User_Button=tk.Button(root, text="Add User", command= lambda: myGroup.add_user(entry1.get(),entry2.get()))
-Add_User_Button.grid(row=3,column=0)
+    Drop_User_Button=tk.Button(root, text="Drop User",command= lambda: myGroup.drop_user(entry2.get()))
+    Drop_User_Button.grid(row=3,column=1)
 
-Drop_User_Button=tk.Button(root, text="Drop User",command= lambda: myGroup.drop_user(entry2.get()))
-Drop_User_Button.grid(row=3,column=1)
-
-root.mainloop()
+    root.mainloop()
