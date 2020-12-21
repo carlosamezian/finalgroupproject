@@ -1,4 +1,6 @@
-# finalgroupproject
+# Final Group Project
+
+## Student Management System
 
 This program is a student management system which an admin uses. It uses a CSV file
 to manage all the info of the students that are on the roster.
