@@ -25,11 +25,3 @@ to manage all the info of the students that are on the roster.
   * os.path
   * re
   * cryptography.fernet import Fernet
-
-* Included:
-* Item 2
-  * Item 2a
-  * Item 2b
-
-  
-
